@@ -1,0 +1,312 @@
+@import url('vars.css');
+@import url('font.css');
+
+.wrapper {
+    background-color: #f1f1f1;
+    font-family: "GothamProLight", Arial, Helvetica, sans-serif;
+}
+
+.wrapper-header {
+    background-color: #f1eae8;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.masthead {
+    text-align: center;
+}
+
+.masthead,
+.moto,
+.product {
+    min-width: 320px;
+    max-width: 1554px;
+    width: 85%; 
+    margin: 0 auto;
+}
+
+.wrapper-header:after,
+.product-wrapper:after,
+.product-wrapper:before  {
+    display: inline-block;
+    content: ' ';
+    height: 23px;
+    width: 100%;
+    background-image: url(../img/wave.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 0;
+}
+.wrapper-header:after,
+.product-wrapper:after {
+    bottom: -23px;
+}
+.product-wrapper:before {
+    transform: rotate(180deg);
+    top: -23px;
+}
+.logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.nav {
+    display: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: -1px;
+    color: #333333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid none;
+}
+.nav-item:hover {
+    color: #d4416a;
+}
+
+.nav-item:first-child {
+    color: #d4416a;
+    border-bottom: 1px solid #d4416a;
+}
+
+.phone-number {
+    display: flex;
+    justify-content: space-between;
+}
+.phone-number a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.main-content {
+    text-align: center;
+      background-color: #dee0d2;
+}
+
+.product-wrapper {
+    position: relative;
+}
+.moto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.moto-title {
+    order: -3;
+    font-family: 'BebasNeuewe';
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.image-desktop {
+    display: none;
+}
+.moto-title > span {
+    color: #d4416a;
+}
+
+.moto-text {
+    text-align: center;
+    word-spacing: 3px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.moto-images {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.image-mobile {
+    order:-2;
+}
+.woman-bg {
+    display: none;
+}
+.price-photo {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+}
+
+.link-order {
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #cf4068;
+    color: #ffffff;
+    height: 45px;
+    width: 230px;
+}
+.link {
+    order: -2;
+    margin-bottom: 30px;
+}
+
+.link-order > span {
+    font-family: "GothamProBold", Arial, Helvetica, sans-serif;
+}
+.product-wrapper{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f1eae8;    
+}
+
+.product-title {
+    text-align: center;
+    flex: 1 1 100%;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #d4416a;
+    margin-bottom: 25px;
+}
+
+.product-info img {
+    height: 140px;
+    margin-bottom: 25px;
+}
+
+
+.product-descr {
+   text-align: center;
+    margin-bottom: 40px;
+    line-height: 24px;
+    color: #333333;
+}
+
+@media (min-width:768px) {
+    .masthead {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .phone-number {
+        flex-direction: column;
+    }
+
+    .phone-number a:first-child{
+        margin-bottom: 20px;
+    }
+
+    .phone-number a {
+        position: relative;
+    }
+    .phone-number a:before {
+        content: ' ';
+        display: inline-block;
+        background-image: url(../img/phone-call.png);
+        height: 18px;
+        width: 20px;
+        position: absolute;
+        left: -30px;
+        transform: (translateY(-50%));
+        background-repeat: no-repeat;
+    }
+    .logo{
+        margin-bottom: 0;
+    }
+
+     .nav {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 100%;
+  }
+    .moto-wrapper {
+    }
+
+    .moto {
+        flex-direction: row; 
+    }
+    .text-wrapper {
+        flex-basis: 50%;
+        align-items: flex-start;
+    }
+    .moto-title {
+        margin-bottom: 60px;
+        font-size: 36px;
+        text-align: left;
+    }
+    .moto-text {
+        text-align: left;
+        max-width: 65%;
+        margin-bottom: 60px;
+    }
+   .image-mobile { 
+       display: none;
+   }
+
+   .image-desktop {
+       display: inline-block;
+   }
+    .product-info {
+        display: flex;
+    }
+
+    .moto-text,
+    .link,
+    .moto-images {
+        order: 0;
+    }
+    .woman-bg {
+        display: inline-block;
+    }
+    .product-info img {
+        display: inline-block;
+        margin-right: auto;
+        margin-bottom: 0;
+        }
+        .product-title {
+            font-size: 28px;
+        }
+    .product-descr-wrapper {
+        flex-basis: 75%;
+    }
+    .product-descr {
+        text-align: left;
+        line-height: 36px;
+    }
+
+    .product-descr-wrapper a {
+         text-align: center;
+        }
+}
+
+@media (min-width: 1540px) {
+    .masthead {
+        align-items: center;
+    }
+    .logo {
+        order: -1;;
+    }
+    .nav {
+        flex-basis: 50%;
+        order: -1;
+        margin-top: 0;
+    }
+
+    .product-title {
+        font-size: 48px ;
+    }
+}
