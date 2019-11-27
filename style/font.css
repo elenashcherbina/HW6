@@ -3,3 +3,13 @@
 	font-family: 'BebasNeuewe';
 	src: url('../fonts/BebasNeue.ttf');
 }
+
+@font-face {
+	font-family: 'GothamPro';
+	src: url('../fonts/GothamPro.ttf');
+}
+
+@font-face {
+	font-family: 'GothamProBold';
+	src: url('../fonts/GothamProBold.ttf');
+}

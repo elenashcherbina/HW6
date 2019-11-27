@@ -3,7 +3,7 @@
 
 .wrapper {
     background-color: #f1f1f1;
-    font-family: "GothamProLight", Arial, Helvetica, sans-serif;
+    font-family: "GothamPro", Arial, Helvetica, sans-serif;
 }
 
 .wrapper-header {
@@ -84,6 +84,9 @@
     cursor: pointer;
 }
 
+.phone-number span {
+    color: #a3a09e;
+}
 .main-content {
     text-align: center;
       background-color: #dee0d2;
@@ -172,6 +175,7 @@
 }
 
 .product-title {
+    font-family: "GothamProBold", Arial, Helvetica, sans-serif;
     text-align: center;
     flex: 1 1 100%;
     text-transform: uppercase;
@@ -192,8 +196,13 @@
     line-height: 24px;
     color: #333333;
 }
-
+.product-descr span {
+    font-family: "GothamProBold";
+}
 @media (min-width:768px) {
+    .wrapper-header {
+        padding-bottom: 25px;
+    }
     .masthead {
         display: flex;
         flex-wrap: wrap;
@@ -272,17 +281,27 @@
     .woman-bg {
         display: inline-block;
     }
-    .product-info img {
-        display: inline-block;
+
+    .image-wrapper {
+        flex-basis: 25%;
         margin-right: auto;
         margin-bottom: 0;
+        align-self: center;
+    }
+    .product-info img {
+        display: block;
+        width: 100%;
+        height: auto;
         }
-        .product-title {
+
+    .product-title {
             font-size: 28px;
         }
     .product-descr-wrapper {
-        flex-basis: 75%;
+        flex-basis: 65%;
+        padding-top: 40px;
     }
+
     .product-descr {
         text-align: left;
         line-height: 36px;
@@ -305,8 +324,26 @@
         order: -1;
         margin-top: 0;
     }
+   
+    .product {
+        padding-bottom: 120px;
+        background-image: url(../img/lypstick.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
 
+    }
     .product-title {
         font-size: 48px ;
+    }
+
+    .product-descr-wrapper {
+        flex-basis: 57%;
+    }
+
+    .image-wrapper {
+        margin-right: 4.5%;
+    }
+    .product-descr {
+        margin-bottom: 70px;
     }
 }
