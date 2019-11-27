@@ -131,6 +131,8 @@
     line-height: 24px;
 }
 .moto-images {
+    max-height: 320px;
+    width: auto;
     text-align: center;
     margin-bottom: 30px;
     position: relative;
@@ -278,8 +280,13 @@
     .moto-images {
         order: 0;
     }
-    .woman-bg {
-        display: inline-block;
+   
+    .moto-wrapper {
+        padding-top: 70px;
+        background-image: url(../img/woman-bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
     }
 
     .image-wrapper {
@@ -324,7 +331,13 @@
         order: -1;
         margin-top: 0;
     }
-   
+   .moto {
+       padding-bottom: 100px;
+   }
+    .moto-text {
+        text-align: center;
+    }
+    
     .product {
         padding-bottom: 120px;
         background-image: url(../img/lypstick.png);
