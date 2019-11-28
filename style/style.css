@@ -343,11 +343,11 @@ html {
         background-size: 520px;
     }
 }
-@media(min-width:1200px) {
+@media(min-width:1300px) {
     .moto-wrapper {
-        background-size: 600px;
+        background-size: 700px;
 }
-
+}
 @media (min-width: 1540px) {
     .masthead {
         align-items: center;
@@ -359,9 +359,6 @@ html {
         flex-basis: 50%;
         order: -1;
         margin-top: 0;
-    }
-    .moto-wrapper {
-        background-size: 700px;
     }
 
     .moto-text {
