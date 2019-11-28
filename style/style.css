@@ -361,7 +361,9 @@ html {
         order: -1;
         margin-top: 0;
     }
-
+    .moto {
+        padding-bottom: 27px;
+    }
     .moto-text {
         text-align: center;
         line-height: 2.25rem;
