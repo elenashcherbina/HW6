@@ -341,14 +341,14 @@ html {
         background-image: url('../img/woman-bg.png');
         background-repeat: no-repeat;
         background-position: bottom right;
-        background-size: 520px;
+        background-size: contain;
     }
-}
+}/*
 @media(min-width:1300px) {
     .moto-wrapper {
         background-size: 700px;
 }
-}
+}*/
 @media (min-width: 1540px) {
     .masthead {
         align-items: center;
