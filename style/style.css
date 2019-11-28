@@ -4,8 +4,7 @@ html {
     font-size: 16px;
 }
 .wrapper {
-    background-color: var(--grey-color);
-    font-family: "GothamPro", Arial, Helvetica, sans-serif;
+    background-color: var(--gray-color);
 }
 
 .wrapper-header {
@@ -18,6 +17,7 @@ html {
 .masthead {
     text-align: center;
 }
+
 
 .masthead,
 .moto,
@@ -57,6 +57,7 @@ html {
 }
 
 .nav-item {
+    font-family: "GothamPro", Arial, Helvetica, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.125rem;
@@ -79,15 +80,16 @@ html {
     justify-content: space-between;
 }
 .phone-number a {
+    font-family: "GothamPro", Arial, Helvetica, sans-serif;
     display: inline-block;
     text-decoration: none;
     font-size: 0.8125rem;
-    color: #333333;
+    color: var(--main-font-color);
     cursor: pointer;
 }
 
 .phone-number span {
-    color: var(--main-font-color);
+    color: var(--light-gray-color);
 }
 .main-content {
     text-align: center;
@@ -97,7 +99,8 @@ html {
     position: relative;
 }
 .moto-wrapper {
-    background-color:  var(--grey-color);
+    padding-bottom: 20px;
+    background-color:  var(--gray-color);
 }
 .moto {
     display: flex;
@@ -129,6 +132,7 @@ html {
 }
 
 .moto-text {
+    font-family: "GothamPro", Arial, Helvetica, sans-serif;
     text-align: center;
     word-spacing: 3px;
     font-size: 0.875rem;
@@ -142,9 +146,7 @@ html {
 .image-mobile {
     order:-2;
 }
-.woman-bg {
-    display: none;
-}
+
 .price-photo {
     position: absolute;
     top: -20px;
@@ -164,9 +166,10 @@ html {
     height: 45px;
     padding-left: 28px;
     padding-right: 28px;
+    border-bottom: 3px solid var(--purple-color);
 }
 .link-order:hover {
-    border-bottom: 3px solid var(--purple-color);
+    border-bottom: 3px solid none;
 }
 .link {
     order: -2;
@@ -199,6 +202,7 @@ html {
 
 
 .product-descr {
+    font-family: "GothamPro", Arial, Helvetica, sans-serif;
    text-align: center;
     margin-bottom: 40px;
     line-height: 24px;
@@ -254,6 +258,7 @@ html {
         background-color: var(--green-color);
     }
 
+
     .moto {
         flex-direction: row; 
     }
@@ -267,6 +272,7 @@ html {
         text-align: left;
     }
     .moto-text {
+        line-height: 1.625rem;
         text-align: left;
         max-width: 65%;
         margin-bottom: 60px;
@@ -289,11 +295,8 @@ html {
     }
    
     .moto-wrapper {
-        padding-top: 70px;
-      
+        padding-top: 20px;  
     }
-
-    
 
     .image-wrapper {
         flex-basis: 25%;
@@ -317,6 +320,7 @@ html {
     }
 
     .product-descr {
+         font-family: "GothamPro", Arial, Helvetica, sans-serif;
         text-align: left;
         line-height: 36px;
     }
@@ -324,6 +328,23 @@ html {
     .product-descr-wrapper a {
          text-align: center;
         }
+}
+@media(min-width:1024px) {
+    .moto-title {
+        margin-bottom: 60px;
+        
+        font-size: 2.20rem;
+    }
+    .moto-wrapper {
+        background-image: url('../img/woman-bg.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 520px;
+    }
+}
+@media(min-width:1200px) {
+    .moto-wrapper {
+        background-size: 600px;
 }
 
 @media (min-width: 1540px) {
@@ -338,11 +359,13 @@ html {
         order: -1;
         margin-top: 0;
     }
-   .moto {
-       padding-bottom: 100px;
-   }
+    .moto-wrapper {
+        background-size: 700px;
+    }
+
     .moto-text {
         text-align: center;
+        line-height: 2.25rem;
     }
     
     .product {
@@ -365,5 +388,9 @@ html {
     }
     .product-descr {
         margin-bottom: 70px;
+    }
+
+    .link {
+        margin-left: 10%;
     }
 }
