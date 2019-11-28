@@ -161,16 +161,16 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: var( --pink-button-color);
     color: var(--white-color);
     height: 45px;
     padding-left: 28px;
     padding-right: 28px;
-    border-bottom: 3px solid var(--purple-color);
+    
 }
 .link-order:hover {
-    border-bottom: 3px solid none;
+    border-bottom: 3px solid var(--purple-color);
 }
 .link {
     order: -2;
